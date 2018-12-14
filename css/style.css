@@ -192,7 +192,8 @@ a:hover {
   width: 260px;
   height: 100vh;
   position: fixed;
-  z-index: 2; }
+  z-index: 2;
+  top: 0; }
 
 .nav-item, .nav__button {
   margin-top: 10px; }
@@ -206,7 +207,12 @@ a:hover {
   left: calc(260px + 2.5rem); }
 
 .page__title {
-  font-size: 2rem; }
+  font-size: 2rem;
+  position: fixed; }
+
+.page-icons {
+  position: fixed;
+  right: 0; }
 
 .question-block__list-text {
   border-left: 3px solid #007bff !important; }
