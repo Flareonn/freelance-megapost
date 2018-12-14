@@ -189,10 +189,10 @@ a:hover {
   border-radius: 50px; }
 
 .nav-wrap {
-  top: 0;
   width: 260px;
   height: 100vh;
-  position: fixed; }
+  position: fixed;
+  z-index: 2; }
 
 .nav-item, .nav__button {
   margin-top: 10px; }
@@ -203,7 +203,7 @@ a:hover {
 
 .page-wrap {
   position: fixed;
-  right: .5rem; }
+  left: calc(260px + 2.5rem); }
 
 .page__title {
   font-size: 2rem; }
