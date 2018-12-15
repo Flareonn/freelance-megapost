@@ -13,8 +13,8 @@
     <title>MEGAPOST</title>
   </head>
   <body style="background: #F6F6F6">
-    <aside class="nav-wrap bg-dark">
-    	<ul class="nav flex-column">
+    <aside class="nav-wrap d-flex justify-content-between flex-column bg-dark">
+    	<ul class="nav flex-column w-100">
     		<li class="nav__logo-wrap my-4">
           <a href="#">
       			<picture class="nav__logo nav-link">
@@ -28,7 +28,7 @@
             </picture>
           </a>
     		</li>
-    		<li class="justify-content-center d-flex px-3 mb-xl-4 mb-lg-0">
+    		<li class="justify-content-center d-flex px-3">
       		<button class="nav-link btn btn-primary text-uppercase nav__button align-items-center d-flex justify-content-center w-100">
             <img src="img/single/icon_plus_white.png" alt="plus" class="nav-icon mr-3">
             Создать пост
@@ -79,64 +79,64 @@
             <img src="img/single/menu_img_active.png" alt="icon" class="mr-3 nav-icon">Изображения
           </a>
     		</li>
-    		<div class="nav__footer container">
-    			<h6 class="nav__footer-title text-uppercase text-white-50 mb-4">
-    				Мы в соцсетях
-    			</h6>
-    			<div class="nav__footer-social-block d-flex justify-content-between">
-    				<a href="https://twitter.com">
-              <picture class="footer__block-image">
-                <source srcset="img/twitter-footer.png 1x,
-                                img/twitter-footer-2x.png 2x,
-                                img/twitter-footer-3x.png 3x"
-                        media="(min-width: 600px)">
-                <img src="img/twitter-footer.png"
-                      srcset="img/twitter-footer-2x.png 2x,
-                              img/twitter-footer-3x.png 3x"
-                     alt="Twitter">    
-              </picture>
-            </a>
-            <a href="https://ok.ru">
-              <picture class="footer__block-image">
-                <source srcset="img/ok-footer.png 1x,
-                                img/ok-footer-2x.png 2x,
-                                img/ok-footer-3x.png 3x"
-                        media="(min-width: 600px)">
-                <img src="img/ok-footer.png"
-                      srcset="img/ok-footer-2x.png 2x,
-                              img/ok-footer-3x.png 3x"
-                     alt="OK">    
-              </picture>
-            </a>
-            <a href="https://vk.com">
-              <picture class="footer__block-image">
-                <source srcset="img/vk-footer.png 1x,
-                                img/vk-footer-2x.png 2x,
-                                img/vk-footer-3x.png 3x"
-                        media="(min-width: 600px)">
-                <img src="img/vk-footer.png"
-                      srcset="img/vk-footer-2x.png 2x,
-                              img/vk-footer-3x.png 3x"
-                     alt="VK">    
-              </picture>
-            </a>
-            <a href="https://www.facebook.com">
-              <picture class="footer__block-image">
-                <source srcset="img/fb-footer.png 1x,
-                                img/fb-footer-2x.png 2x,
-                                img/fb-footer-3x.png 3x"
-                        media="(min-width: 600px)">
-                <img src="img/fb-footer.png"
-                      srcset="img/fb-footer-2x.png 2x,
-                              img/fb-footer-3x.png 3x"
-                     alt="FB">    
-              </picture>
-            </a>
-         </div>
-    		</div>
     	</ul>
+      <div class="nav__footer w-100">
+        <h6 class="nav__footer-title d-flex justify-content-center text-uppercase text-white-50 mb-4">
+          Мы в соцсетях
+        </h6>
+        <div class="nav__footer-social-block d-flex justify-content-around">
+          <a href="https://twitter.com">
+            <picture class="footer__block-image">
+              <source srcset="img/twitter-footer.png 1x,
+                              img/twitter-footer-2x.png 2x,
+                              img/twitter-footer-3x.png 3x"
+                      media="(min-width: 600px)">
+              <img src="img/twitter-footer.png"
+                    srcset="img/twitter-footer-2x.png 2x,
+                            img/twitter-footer-3x.png 3x"
+                   alt="Twitter">    
+            </picture>
+          </a>
+          <a href="https://ok.ru">
+            <picture class="footer__block-image">
+              <source srcset="img/ok-footer.png 1x,
+                              img/ok-footer-2x.png 2x,
+                              img/ok-footer-3x.png 3x"
+                      media="(min-width: 600px)">
+              <img src="img/ok-footer.png"
+                    srcset="img/ok-footer-2x.png 2x,
+                            img/ok-footer-3x.png 3x"
+                   alt="OK">    
+            </picture>
+          </a>
+          <a href="https://vk.com">
+            <picture class="footer__block-image">
+              <source srcset="img/vk-footer.png 1x,
+                              img/vk-footer-2x.png 2x,
+                              img/vk-footer-3x.png 3x"
+                      media="(min-width: 600px)">
+              <img src="img/vk-footer.png"
+                    srcset="img/vk-footer-2x.png 2x,
+                            img/vk-footer-3x.png 3x"
+                   alt="VK">    
+            </picture>
+          </a>
+          <a href="https://www.facebook.com">
+            <picture class="footer__block-image">
+              <source srcset="img/fb-footer.png 1x,
+                              img/fb-footer-2x.png 2x,
+                              img/fb-footer-3x.png 3x"
+                      media="(min-width: 600px)">
+              <img src="img/fb-footer.png"
+                    srcset="img/fb-footer-2x.png 2x,
+                            img/fb-footer-3x.png 3x"
+                   alt="FB">    
+            </picture>
+          </a>
+       </div>
+      </div>
     </aside>
-    <button class="menu-link"><i class="fas fa-bars fa-2x"></i></button>
+    <button class="menu-link d-md-none d-sm-block"><i class="fas fa-bars fa-2x"></i></button>
 		<div class="page-wrap pt-4 pr-sm-5">
       <header class="page__header mb-xl-0 mb-lg-4 d-flex justify-content-sm-between justify-content-around align-items-center">
         <h1 class="page__title mb-0">Поддержка</h1>
@@ -271,9 +271,9 @@
         </div>
       </div>
 		</div>
-    <div class="popup" style="display: none">
+    <div class="popup" style="display: block">
       <div class="popup-top bg-primary text-white d-flex justify-content-between align-items-center">
-        <div class="popup__title py-2 pl-3">Вопрос</div>
+        <h6 class="popup__title mb-0 py-2 pl-3">Вопрос</h6>
         <div class="popup-top__icons pr-3">
           <span class="popup-minimize"><i class="far fa-fw fa-window-minimize"></i></span>
           <span class="popup-scale"><i class="fas fa-fw fa-arrows-alt-h" data-fa-transform="rotate--45"></i></span>
@@ -282,8 +282,8 @@
       </div>
       <form action="#">
         <div class="popup-middle bg-white">
-          <div class="popup__descr mx-3 d-flex flex-row align-items-center">
-            <span class="text-muted w-25">Категория</span>
+          <div class="popup__descr px-3 d-flex flex-row align-items-center">
+            <span class="text-muted w-25 mr-3 mr-sm-auto">Категория</span>
             <select name="Категория" class="popup-select w-75">
               <option value="account">Аккаунт</option>
               <option value="post">Публикации</option>
@@ -297,7 +297,7 @@
             </select>
           </div>
           <textarea required name="popup-user-text" class="py-3 pl-3 pr-5 popup-text"></textarea>
-          <div class="popup-form pt-2 pb-4 px-3 d-flex justify-content-end">
+          <div class="popup-form pt-2 pb-4 px-3 d-flex justify-content-sm-end flex-column-reverse flex-sm-row">
             <button class="btn btn-outline-light text-uppercase text-primary px-5 py-2 popup-form__button popup-form__button_white" type="button" data-dismiss="modal">Отмена</button>
             <button class="btn btn-primary text-uppercase text-white px-5 py-2 popup-form__button" type="submit">Отправить</button>
           </div>
