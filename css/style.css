@@ -61,7 +61,7 @@ a:hover {
     font-size: 1.3rem; }
   .function-block__about, .footer__text {
     font-size: 1.1rem; }
-  .header {
+  .header, .single__descr, .nav-link {
     font-size: .9rem; }
   .main__descr {
     width: 100%; }
@@ -102,7 +102,47 @@ a:hover {
     justify-content: center;
     margin-top: 5%; } }
 
+@media (max-width: 767.98px) {
+  .page-wrap {
+    margin-left: 2.5rem !important;
+    transition: all .5s; }
+    .page-wrap_active {
+      transform: translateX(50%); }
+  .layout {
+    overflow-x: hidden; }
+  .menu-link {
+    display: block;
+    z-index: 102;
+    background-color: #fff;
+    position: fixed;
+    border-radius: 20px;
+    border: none;
+    width: 50px;
+    height: 50px;
+    top: 20px;
+    left: -11px;
+    transition: all .5s; }
+    .menu-link_active {
+      border: 1px solid gray;
+      left: 190px;
+      background-color: transparent;
+      color: #fff; }
+    .menu-link:focus {
+      outline: none; }
+  .nav-wrap {
+    left: -260px;
+    transition: all 0.5s;
+    position: absolute;
+    width: 260px;
+    z-index: 100; }
+    .nav-wrap_active {
+      left: 0; } }
+
 @media (max-width: 575.98px) {
+  * {
+    margin-right: 0 !important; }
+  .menu-link {
+    background-color: transparent; }
   .main__title, .main__descr, .function-block__text, .features__block__subtitle {
     font-size: 1.4rem; }
   .function-block__descr, .features__block__descr, .function-block__subtitle {
@@ -136,7 +176,9 @@ a:hover {
   .features__button {
     width: 50%;
     margin-left: 50%;
-    transform: translateX(-50%); } }
+    transform: translateX(-50%); }
+  .page-wrap {
+    margin-left: 0rem !important; } }
 
 .main {
   height: 100vh; }
@@ -195,7 +237,7 @@ a:hover {
   z-index: 2;
   top: 0; }
 
-.nav-item, .nav__button {
+.nav-item {
   margin-top: 10px; }
 
 .nav__footer {
@@ -203,15 +245,15 @@ a:hover {
   bottom: 1.5rem; }
 
 .page-wrap {
-  position: fixed;
-  left: calc(260px + 2.5rem); }
+  margin-left: calc(260px + 2.5rem);
+  overflow-y: auto; }
 
 .page__title {
   font-size: 2rem;
-  position: fixed; }
+  position: sticky; }
 
 .page-icons {
-  position: fixed;
+  position: sticky;
   right: 0; }
 
 .question-block__list-text {
@@ -219,7 +261,8 @@ a:hover {
 
 .question-block {
   border: 1px solid #ECEFF2;
-  border-radius: 5px; }
+  border-radius: 5px;
+  margin-bottom: 20px; }
   .question-block .btn {
     border-top: none;
     border-left: none;
@@ -267,7 +310,7 @@ a:hover {
   /* Регулировка высоты списка */ }
 
 #list {
-  height: 75%;
+  height: 35rem;
   overflow-y: auto;
   /* Стилизация элементов списка*/ }
 
@@ -284,7 +327,7 @@ a:hover {
   /* Открытие одного из элементов списка */ }
 
 .question-block__list:checked + .question-block__list + .question-block__article {
-  height: 75%;
+  height: 25vh;
   padding: 20px;
   /* Закрытие одного из элементов списка */ }
 
