@@ -3,7 +3,7 @@ html {
   scroll-behavior: smooth; }
 
 body {
-  overflow: hidden;
+  overflow-x: hidden;
   min-width: 320px; }
 
 img {
@@ -225,6 +225,9 @@ a:hover {
     border-left: none;
     border-right: none; }
 
+.fa-layers-text {
+  user-select: none; }
+
 .question-block__article, .question-block__button, .popup-form__button_white {
   border: transparent !important; }
 
@@ -259,7 +262,7 @@ a:hover {
   width: 462px;
   border-bottom: 1px solid #ECEFF2; }
 
-.popup-close, .popup-scale, .popup-minimize, .fa-square, .page-icon, .fa-layers-text, .fa-layers-counter {
+.popup-close, .popup-scale, .popup-minimize, .page-icon, .fa-layers-text, .fa-layers-counter {
   cursor: pointer;
   /* Регулировка высоты списка */ }
 
@@ -277,11 +280,11 @@ a:hover {
   display: block;
   overflow-x: hidden;
   overflow-y: auto;
-  transition: height .5s;
+  transition: height .8s;
   /* Открытие одного из элементов списка */ }
 
 .question-block__list:checked + .question-block__list + .question-block__article {
-  height: 375px;
+  height: 75%;
   padding: 20px;
   /* Закрытие одного из элементов списка */ }
 
@@ -298,110 +301,16 @@ a:hover {
   width: 20px;
   height: 20px; }
 
-.nav-item {
+.nav-item, .icon-profile {
   filter: saturate(10%); }
-
-.nav-item:hover {
-  filter: none; }
+  .nav-item:hover, .icon-profile:hover {
+    filter: none; }
 
 .page-icon {
   height: 24px;
-  width: 24px; }
+  width: 24px;
+  filter: none; }
   .page-icon_notice {
     width: 20px; }
-
-@media (min-width: 1200px) and (max-width: 1799.98px) {
-  .features__icon {
-    width: 10%; } }
-
-@media (min-width: 992px) and (max-width: 1199.98px) {
-  .main__title, .main__descr, .function-block__text, .function-block__subtitle, .features__block__subtitle {
-    font-size: 1.3rem; }
-  .header, .function-block__descr, .function-block__about, .features__block__descr, .footer__text {
-    font-size: 1rem; }
-  .features__icon {
-    width: 15%; } }
-
-@media (min-width: 768px) and (max-width: 991.98px) {
-  .main__title, .main__descr, .function-block__text, .features__block__subtitle {
-    font-size: 1.6rem; }
-  .function-block__descr, .features__block__descr, .function-block__subtitle {
-    font-size: 1.3rem; }
-  .function-block__about, .footer__text {
-    font-size: 1.1rem; }
-  .header {
-    font-size: .9rem; }
-  .main__descr {
-    width: 100%; }
-  .main__image picture {
-    bottom: -15vh; }
-  .features__icon {
-    width: 10%; }
-  .features__button {
-    width: 50%;
-    margin-left: 50%;
-    transform: translateX(-50%); } }
-
-@media (min-width: 576px) and (max-width: 767.98px) {
-  .main__title, .main__descr, .function-block__text, .features__block__subtitle {
-    font-size: 1.6rem; }
-  .function-block__descr, .features__block__descr, .function-block__subtitle {
-    font-size: 1.3rem; }
-  .header, .function-block__about, .footer__text {
-    font-size: 1.1rem; }
-  .header__logo {
-    display: none; }
-  .main__descr, .main__title, .footer__block {
-    width: 100%; }
-  .main__image picture {
-    bottom: -25vh; }
-  .features__icon {
-    width: 10%; }
-  .features__button {
-    width: 50%;
-    margin-left: 50%;
-    transform: translateX(-50%); }
-  .header__logo_mobile {
-    display: -webkit-flex;
-    display: -moz-flex;
-    display: -ms-flex;
-    display: -o-flex;
-    display: flex;
-    justify-content: center;
-    margin-top: 5%; } }
-
-@media (max-width: 575.98px) {
-  .main__title, .main__descr, .function-block__text, .features__block__subtitle {
-    font-size: 1.4rem; }
-  .function-block__descr, .features__block__descr, .function-block__subtitle {
-    font-size: 1.1rem; }
-  .header, .function-block__about, .footer__text {
-    font-size: 1rem; }
-  .footer__logo, .header__logo {
-    display: none; }
-  .header__logo_mobile {
-    display: -webkit-flex;
-    display: -moz-flex;
-    display: -ms-flex;
-    display: -o-flex;
-    display: flex;
-    justify-content: center;
-    margin-top: 5%; }
-  .main__descr, .main__title {
-    width: 80%; }
-  .header__button {
-    width: 100%; }
-  .header__text {
-    text-align: justify; }
-  .main__image picture {
-    bottom: -5vh; }
-  .main {
-    height: 75vh; }
-  .features__icon {
-    width: 10%; }
-  .footer__block-image {
-    margin-right: 10px; }
-  .features__button {
-    width: 50%;
-    margin-left: 50%;
-    transform: translateX(-50%); } }
+  .page-icon:hover {
+    filter: invert(100%); }
