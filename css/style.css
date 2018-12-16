@@ -94,13 +94,13 @@ a:hover {
 
 .nav-wrap {
   width: 260px;
-  height: 100vh;
+  height: 100%;
   position: fixed;
-  z-index: 2;
+  z-index: 1070;
   top: 0; }
 
 .nav {
-  overflow-y: auto; }
+  overflow-x: auto; }
 
 .nav-item {
   width: 260px;
@@ -141,17 +141,30 @@ a:hover {
   width: 462px;
   box-shadow: 0px 20px 50px rgba(0, 0, 0, 0.5); }
   .popup__descr {
-    border-bottom: 1px solid #ECEFF2;
-    height: 60px;
-    width: 430px; }
+    height: 60px; }
+    .popup__descr_rss {
+      height: 90px; }
   .popup-top {
     border-top-right-radius: 5px;
     border-top-left-radius: 5px; }
+  .popup-wrap {
+    height: 30px;
+    border-bottom: 1px solid #ECEFF2;
+    width: 430px; }
+    .popup-wrap_image {
+      height: 295px;
+      background-color: #fff; }
 
-.popup-select, .popup-text {
+.popup-image__block {
+  border-radius: 5px;
+  height: 50%;
+  object-fit: cover;
+  overflow: hidden; }
+
+.popup-select, .popup-text, .popup-input, .card__button {
   border: none;
   /* textarea в форме */ }
-  .popup-select:focus, .popup-text:focus {
+  .popup-select:focus, .popup-text:focus, .popup-input:focus, .card__button:focus {
     outline: none; }
 
 .popup-text {
@@ -159,6 +172,12 @@ a:hover {
   height: 260px;
   width: 462px;
   border-bottom: 1px solid #ECEFF2; }
+  .popup-text__descr-image {
+    border: none;
+    height: 90px;
+    width: 430px;
+    font-size: .8rem;
+    font-weight: 500; }
 
 .popup-close, .popup-scale, .popup-minimize, .page-icon, .fa-layers-text, .fa-layers-counter {
   cursor: pointer;
@@ -199,6 +218,13 @@ a:hover {
   width: 20px;
   height: 20px; }
 
+.card-icon {
+  width: 24px;
+  height: 16px; }
+  .card-icon__action {
+    height: 35px;
+    width: 35px; }
+
 .nav-item, .icon-profile {
   filter: saturate(10%); }
   .nav-item:hover, .icon-profile:hover {
@@ -212,6 +238,63 @@ a:hover {
     width: 20px; }
   .page-icon:hover {
     filter: invert(100%); }
+
+.input-check {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  vertical-align: top;
+  position: relative;
+  cursor: pointer; }
+
+.input-check input {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  z-index: 10;
+  opacity: 0; }
+
+.input-check label {
+  padding-left: 50px;
+  width: 100%;
+  cursor: pointer; }
+
+.input-check label:before {
+  display: block;
+  position: absolute;
+  left: 0;
+  width: 30px;
+  height: 30px;
+  background: rgba(0, 0, 0, 0) url("../img/single/checkbox.png") no-repeat;
+  z-index: 5;
+  content: ''; }
+
+.input-check input:checked + label:before {
+  background-position: 0px 0px; }
+
+.input-check input:not(:checked) + label:before {
+  background-position: -30px 0px; }
+
+.card {
+  display: inline-block !important;
+  margin-bottom: 1.5rem;
+  width: 15rem;
+  background-color: rgba(0, 0, 0, 0.03) !important; }
+  .card__button {
+    background-color: transparent;
+    cursor: pointer; }
+  .card-footer {
+    background-color: transparent !important;
+    cursor: pointer; }
+
+.card:hover {
+  background-color: #fff !important;
+  box-shadow: 0px 0px 30px 0.5px rgba(0, 0, 0, 0.18);
+  background-image: url("../img/single/icon_edit.png"), url("../img/single/icon_remove.png");
+  background-repeat: no-repeat;
+  background-position: top 5px right 5px, top 5px right 40px; }
 
 @media (min-width: 1200px) and (max-width: 1799.98px) {
   .features__icon {
@@ -283,7 +366,7 @@ a:hover {
     overflow-x: hidden; }
   .menu-link {
     display: block;
-    z-index: 102;
+    z-index: 1080;
     background-color: #fff;
     position: fixed;
     border-radius: 20px;
@@ -296,6 +379,7 @@ a:hover {
     .menu-link_active {
       border: 1px solid gray;
       left: 190px;
+      z-index: 1080;
       background-color: transparent;
       color: #fff; }
     .menu-link:focus {
@@ -303,9 +387,8 @@ a:hover {
   .nav-wrap {
     left: -260px;
     transition: all 0.5s;
-    position: absolute;
     width: 260px;
-    z-index: 100; }
+    z-index: 1070; }
     .nav-wrap_active {
       left: 0; } }
 
