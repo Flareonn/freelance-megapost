@@ -10,7 +10,7 @@ img {
   max-width: 100%; }
 
 a:hover {
-  text-decoration: none; }
+  text-decoration: none !important; }
 
 ::-webkit-scrollbar-button {
   background-image: url("");
@@ -135,36 +135,42 @@ a:hover {
   /* Позиционирование диалогового окна */ }
 
 .popup {
+  display: none;
   position: fixed;
   bottom: 0;
   right: 50px;
   width: 462px;
   box-shadow: 0px 20px 50px rgba(0, 0, 0, 0.5); }
   .popup__descr {
-    height: 60px; }
-    .popup__descr_rss {
-      height: 90px; }
+    height: 100%; }
   .popup-top {
     border-top-right-radius: 5px;
     border-top-left-radius: 5px; }
   .popup-wrap {
-    height: 30px;
+    height: 45px;
     border-bottom: 1px solid #ECEFF2;
-    width: 430px; }
+    width: 430px;
+    align-items: center;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex; }
     .popup-wrap_image {
-      height: 295px;
-      background-color: #fff; }
+      height: 100%; }
 
 .popup-image__block {
-  border-radius: 5px;
-  height: 50%;
-  object-fit: cover;
-  overflow: hidden; }
+  height: 150px;
+  width: 100%;
+  object-fit: cover; }
 
-.popup-select, .popup-text, .popup-input, .card__button {
+.popup-input {
+  border-radius: 5px; }
+
+.popup-select, .popup-text, .popup-input, .card__button, .schedule__button, .popup-icon {
   border: none;
   /* textarea в форме */ }
-  .popup-select:focus, .popup-text:focus, .popup-input:focus, .card__button:focus {
+  .popup-select:focus, .popup-text:focus, .popup-input:focus, .card__button:focus, .schedule__button:focus, .popup-icon:focus {
     outline: none; }
 
 .popup-text {
@@ -179,7 +185,10 @@ a:hover {
     font-size: .8rem;
     font-weight: 500; }
 
-.popup-close, .popup-scale, .popup-minimize, .page-icon, .fa-layers-text, .fa-layers-counter {
+.card-social + a {
+  text-decoration: none; }
+
+.popup-close, .popup-scale, .popup-minimize, .page-icon, .fa-layers-text, .fa-layers-counter, .card-icon__social {
   cursor: pointer;
   /* Регулировка высоты списка */ }
 
@@ -201,7 +210,7 @@ a:hover {
   /* Открытие одного из элементов списка */ }
 
 .question-block__list:checked + .question-block__list + .question-block__article {
-  height: 25vh;
+  height: 200px;
   padding: 20px;
   /* Закрытие одного из элементов списка */ }
 
@@ -215,13 +224,13 @@ a:hover {
   filter: invert(10%); }
 
 .nav-icon {
-  width: 20px;
+  width: 22.5px;
   height: 20px; }
 
 .card-icon {
   width: 24px;
   height: 16px; }
-  .card-icon__action {
+  .card-icon__action, .card-icon__social {
     height: 35px;
     width: 35px; }
 
@@ -229,6 +238,17 @@ a:hover {
   filter: saturate(10%); }
   .nav-item:hover, .icon-profile:hover {
     filter: none; }
+
+.popup-icon {
+  width: 20px; }
+  .popup-icon:hover {
+    filter: invert(100%); }
+
+.schedule__button {
+  width: 30px;
+  height: 30px; }
+  .schedule__button:hover {
+    filter: invert(100%); }
 
 .page-icon {
   height: 24px;
@@ -272,29 +292,48 @@ a:hover {
   content: ''; }
 
 .input-check input:checked + label:before {
-  background-position: 0px 0px; }
+  background-position: 0px -2.5px; }
 
 .input-check input:not(:checked) + label:before {
-  background-position: -30px 0px; }
+  background-position: -30px -2.5px; }
 
 .card {
   display: inline-block !important;
   margin-bottom: 1.5rem;
   width: 15rem;
-  background-color: rgba(0, 0, 0, 0.03) !important; }
-  .card__button {
-    background-color: transparent;
-    cursor: pointer; }
-  .card-footer {
-    background-color: transparent !important;
-    cursor: pointer; }
+  background-color: rgba(0, 0, 0, 0.01) !important; }
+
+.card__button, .card-footer, .schedule__button, .popup-icon {
+  background-color: transparent !important;
+  cursor: pointer; }
 
 .card:hover {
   background-color: #fff !important;
-  box-shadow: 0px 0px 30px 0.5px rgba(0, 0, 0, 0.18);
-  background-image: url("../img/single/icon_edit.png"), url("../img/single/icon_remove.png");
-  background-repeat: no-repeat;
-  background-position: top 5px right 5px, top 5px right 40px; }
+  box-shadow: 0px 0px 30px 0.5px rgba(0, 0, 0, 0.18); }
+
+.card-img-top {
+  border-radius: 5% !important;
+  height: 10rem;
+  object-fit: cover; }
+
+.card-social__img {
+  width: 16px;
+  height: 16px; }
+
+.schedule-card {
+  width: 25rem; }
+
+.schedule-card__descr {
+  font-size: .8rem; }
+
+.schedule-board {
+  height: 50%; }
+
+.schedule-board__footer {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.18); }
+
+.schedule-card__descr {
+  height: 3rem; }
 
 @media (min-width: 1200px) and (max-width: 1799.98px) {
   .features__icon {
@@ -357,6 +396,8 @@ a:hover {
     margin-top: 5%; } }
 
 @media (max-width: 767.98px) {
+  .schedule-card {
+    width: 100% !important; }
   .page-wrap {
     margin-left: 2.5rem !important;
     transition: all .5s; }
@@ -432,8 +473,12 @@ a:hover {
     margin-left: 50%;
     transform: translateX(-50%); }
   .page-wrap {
-    margin-left: 0rem !important; }
+    margin-left: 0 !important; }
   .popup {
     right: 25px; }
-  .popup, .popup-text, .popup__descr {
-    width: 280px; } }
+  .card {
+    width: 97%; }
+  .popup {
+    width: 80%; }
+  .popup-wrap, .popup__descr, .popup-text, .popup-select {
+    width: 100%; } }
