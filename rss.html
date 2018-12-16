@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="ru" class="layout">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/style.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+				<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
+
+    <title>MEGAPOST</title>
+  </head>
+  <body style="background: #F6F6F6">
+    <aside class="nav-wrap d-flex justify-content-between flex-column bg-dark h-100 pb-4">
+    	<ul class="nav flex-column w-100">
+    		<li class="nav__logo-wrap my-4">
+          <a href="#">
+      			<picture class="nav__logo nav-link">
+              <source srcset="img/logo.png 1x,
+                              img/logo-2x.png 2x,
+                              img/logo-3x.png 3x"
+                      media="(min-width: 600px)">
+              <img src="img/logo.svg"
+                    srcset="img/logo-2x.png 2x"
+                   alt="Logo">    
+            </picture>
+          </a>
+    		</li>
+    		<li class="justify-content-center d-flex px-3">
+      		<button class="nav-link btn btn-primary text-uppercase nav__button align-items-center d-flex justify-content-center w-100">
+            <img src="img/single/icon_plus_white.png" alt="plus" class="nav-icon mr-3">
+            Создать пост
+          </button>    			
+    		</li>
+    		<li class="nav-item">
+          <a href="#" class="nav-link text-white-50">
+            <img src="img/single/menu_pub_active.png" alt="icon" class="mr-3 nav-icon">Публикации
+          </a>
+    		</li>
+    		<li class="nav-item">
+    			<a href="#" class="nav-link text-white-50">
+            <img src="img/single/menu_cal_active.png" alt="icon" class="mr-3 nav-icon">Календарь
+          </a>
+    		</li>
+    		<li class="nav-item">
+    			<a href="#" class="nav-link text-white-50">
+            <img src="img/single/menu_list_active.png" alt="icon" class="mr-3 nav-icon">Списки
+          </a>
+    		</li>
+    		<li class="nav-item">
+    			<a href="#" class="nav-link text-white-50">
+            <img src="img/single/menu_acc_active.png" alt="icon" class="mr-3 nav-icon">Аккаунты
+          </a>
+    		</li>
+    		<li class="nav-item">
+    			<a href="index.html" class="nav-link text-white-50">
+            <img src="img/single/menu_sch_active.png" alt="icon" class="mr-3 nav-icon active">Расписание
+          </a>
+    		</li>
+    		<li class="nav-item">
+    			<a href="#" class="nav-link text-white-50">
+            <img src="img/single/menu_func_active.png" alt="icon" class="mr-3 nav-icon">Функции
+          </a>
+    		</li>
+    		<li class="nav-item">
+    			<a href="rss.html" class="nav-link text-white-50">
+            <img src="img/single/menu_rss_active.png" alt="icon" class="mr-3 nav-icon">RSS
+          </a>
+    		</li>
+    		<li class="nav-item">
+    			<a href="#" class="nav-link text-white-50">
+            <img src="img/single/menu_wm_active.png" alt="icon" class="mr-3 nav-icon">Вотермарки
+          </a>
+    		</li>
+    		<li class="nav-item">
+    			<a href="#" class="nav-link text-white-50">
+            <img src="img/single/menu_img_active.png" alt="icon" class="mr-3 nav-icon">Изображения
+          </a>
+    		</li>
+    	</ul>
+      <div class="nav__footer w-100">
+        <h6 class="nav__footer-title pl-4 text-uppercase text-white-50 mb-4">
+          Мы в соцсетях
+        </h6>
+        <div class="nav__footer-social-block d-flex justify-content-around">
+          <a href="https://twitter.com">
+            <picture class="footer__block-image">
+              <source srcset="img/twitter-footer.png 1x,
+                              img/twitter-footer-2x.png 2x,
+                              img/twitter-footer-3x.png 3x"
+                      media="(min-width: 600px)">
+              <img src="img/twitter-footer.png"
+                    srcset="img/twitter-footer-2x.png 2x,
+                            img/twitter-footer-3x.png 3x"
+                   alt="Twitter">    
+            </picture>
+          </a>
+          <a href="https://ok.ru">
+            <picture class="footer__block-image">
+              <source srcset="img/ok-footer.png 1x,
+                              img/ok-footer-2x.png 2x,
+                              img/ok-footer-3x.png 3x"
+                      media="(min-width: 600px)">
+              <img src="img/ok-footer.png"
+                    srcset="img/ok-footer-2x.png 2x,
+                            img/ok-footer-3x.png 3x"
+                   alt="OK">    
+            </picture>
+          </a>
+          <a href="https://vk.com">
+            <picture class="footer__block-image">
+              <source srcset="img/vk-footer.png 1x,
+                              img/vk-footer-2x.png 2x,
+                              img/vk-footer-3x.png 3x"
+                      media="(min-width: 600px)">
+              <img src="img/vk-footer.png"
+                    srcset="img/vk-footer-2x.png 2x,
+                            img/vk-footer-3x.png 3x"
+                   alt="VK">    
+            </picture>
+          </a>
+          <a href="https://www.facebook.com">
+            <picture class="footer__block-image">
+              <source srcset="img/fb-footer.png 1x,
+                              img/fb-footer-2x.png 2x,
+                              img/fb-footer-3x.png 3x"
+                      media="(min-width: 600px)">
+              <img src="img/fb-footer.png"
+                    srcset="img/fb-footer-2x.png 2x,
+                            img/fb-footer-3x.png 3x"
+                   alt="FB">    
+            </picture>
+          </a>
+       </div>
+      </div>
+    </aside>
+    <button class="menu-link d-md-none d-sm-block">
+    	<i class="fas fa-bars fa-2x">
+    		
+    	</i>
+    </button>
+  		<div class="page-wrap pt-4 pr-sm-5">
+		   <header class="page__header mb-xl-0 mb-lg-4 d-flex justify-content-sm-between justify-content-around align-items-center">
+		     <h1 class="page__title mb-0">RSS</h1>
+		     <div class="page-icons flex-sm-row d-flex align-items-center fa-lg">
+		       <span class="fa-layers fa-fw mr-sm-4 d-none d-sm-block">
+		         <img src="img/single/icon_notice.png" alt="icon" class="page-icon page-icon_notice">
+		         <span class="fa-layers-counter fa-lg"><strong>1</strong></span>
+		       </span>
+		       <img src="img/single/icon_settings.png" alt="icon" class="page-icon mr-sm-4 d-none d-sm-block">
+          <a href="technical-support.html">
+            <img src="img/single/icon_info.png" alt="icon" class="page-icon mr-sm-5 d-none d-sm-block">
+          </a>
+		       <a href="#" class="fa-layers fa-fw mr-sm-2 icon-profile">
+		         <i class="fas fa-square fa-2x"></i>
+		         <span class="fa-layers-text fa-inverse" data-fa-transform="right-4">A</span>
+         </a>
+         <!--<img src="#" alt="Image_user" class="page__icon">-->
+        </div>
+      </header>
+						<div class="row align-items-xl-start align-item-center mt-4">
+							<div class="single__title-wrap text-center text-sm-left col-12 col-md-8 col-xl-7 order-xl-1">
+								<h3 class="single__title">Подключайте RSS</h3>
+								<p class="single__descr">С помощью RSS каналов вы сможете осуществить публикацию необходимой информации по заданному заранее шаблону в указанные сообщества</p>
+							</div>
+							<div class="single__button-wrap col-12 col-md-4 d-flex col-xl-5 justify-content-md-end justify-content-center mb-3 mb-md-0 h-25 order-xl-3 order-4">
+								<button class="btn px-sm-4 px-md-2 px-lg-3 px-xl-5 single__button btn-primary text-uppercase">Подключить RSS
+								</button>
+							</div>
+						</div>
+						<div class="col-12">
+							<div class="card card-rss mx-2">
+						  <div class="card-body card-white">
+					    <h5 class="card-title">Театр</h5>
+					    <div class="card-wrap d-flex justify-content-between align-items-center">
+						  	 <a href="#" class="card-link">gismeteo.com</a>
+					  	 	<button class="card__button">
+					  	 		<img src="img/single/icon_action.png" alt="icon" class="card-icon__action">
+				  	 		</button>
+				  	 	</div>
+						  </div>
+						  <div class="card-footer text-muted d-flex align-items-center card-white">
+						  	<img src="img/single/menu_list.png" alt="icon" class="card-icon mr-3">
+						  		Театральное
+						  </div>
+							</div>
+							<div class="card card-rss mx-2">
+						  <div class="card-body card-white">
+					    <h5 class="card-title">Улицы</h5>
+					    <div class="card-wrap d-flex justify-content-between align-items-center">
+						  	 <a href="#" class="card-link">gismeteo.com</a>
+					  	 	<button class="card__button">
+					  	 		<img src="img/single/icon_action.png" alt="icon" class="card-icon__action">
+				  	 		</button>
+				  	 	</div>
+						  </div>
+						  <div class="card-footer text-muted d-flex align-items-center card-white">
+						  	<img src="img/single/menu_list.png" alt="icon" class="card-icon mr-3">
+						  		Театральное
+						  </div>
+							</div>
+							<div class="card card-rss mx-2">
+						  <div class="card-body card-white">
+					    <h5 class="card-title">Недвижимость</h5>
+					    <div class="card-wrap d-flex justify-content-between align-items-center">
+						  	 <a href="#" class="card-link">homesite.com</a>
+					  	 	<button class="card__button">
+					  	 		<img src="img/single/icon_action.png" alt="icon" class="card-icon__action">
+				  	 		</button>
+				  	 	</div>
+						  </div>
+						  <div class="card-footer text-muted d-flex align-items-center card-white">
+						  	<img src="img/single/menu_list.png" alt="icon" class="card-icon mr-3">
+						  		Дома
+						  </div>
+							</div>
+							<div class="card card-rss mx-2">
+						  <div class="card-body card-white">
+					    <h5 class="card-title">Детский сад</h5>
+					    <div class="card-wrap d-flex justify-content-between align-items-center">
+						  	 <a href="#" class="card-link">child.com</a>
+					  	 	<button class="card__button">
+					  	 		<img src="img/single/icon_action.png" alt="icon" class="card-icon__action">
+				  	 		</button>
+				  	 	</div>
+						  </div>
+						  <div class="card-footer text-muted d-flex align-items-center card-white">
+						  	<img src="img/single/menu_list.png" alt="icon" class="card-icon mr-3">
+						  		Дети
+						  </div>
+							</div>
+							<div class="card card-rss mx-2">
+						  <div class="card-body card-white">
+					    <h5 class="card-title">Недвижимость</h5>
+					    <div class="card-wrap d-flex justify-content-between align-items-center">
+						  	 <a href="#" class="card-link">homesite.com</a>
+					  	 	<button class="card__button">
+					  	 		<img src="img/single/icon_action.png" alt="icon" class="card-icon__action">
+				  	 		</button>
+				  	 	</div>
+						  </div>
+						  <div class="card-footer text-muted d-flex align-items-center card-white">
+						  	<img src="img/single/menu_list.png" alt="icon" class="card-icon mr-3">
+						  		Дома
+						  </div>
+							</div>
+							<div class="card card-rss mx-2">
+						  <div class="card-body card-white">
+					    <h5 class="card-title">Юмор</h5>
+					    <div class="card-wrap d-flex justify-content-between align-items-center">
+						  	 <a href="#" class="card-link">humor.com</a>
+					  	 	<button class="card__button">
+					  	 		<img src="img/single/icon_action.png" alt="icon" class="card-icon__action">
+				  	 		</button>
+				  	 	</div>
+						  </div>
+						  <div class="card-footer text-muted d-flex align-items-center card-white">
+						  	<img src="img/single/menu_list.png" alt="icon" class="card-icon mr-3">
+						  		Молодые люди
+						  </div>
+							</div>
+						</div>
+				</div>
+    <div class="popup">
+      <div class="popup-top bg-primary text-white d-flex justify-content-between align-items-center">
+        <h6 class="popup__title mb-0 py-2 pl-3">Подключение RSS</h6>
+        <div class="popup-top__icons pr-3">
+          <span class="popup-minimize"><i class="far fa-fw fa-window-minimize"></i></span>
+          <span class="popup-scale"><i class="fas fa-fw fa-arrows-alt-h" data-fa-transform="rotate--45"></i></span>
+          <span class="popup-close" aria-hidden="true"><i class="fas fa-fw fa-times"></i></span>
+        </div>
+      </div>
+      <form action="#">
+       <div class="popup-middle bg-white flex-column d-flex justify-content-between align-items-center">
+        <div class="popup__descr px-3">
+        	<div class="popup-wrap d-flex justify-content-between align-items-center">
+        		<input type="text" class="popup-input my-1 px-2 bg-light w-100 text-primary" placeholder="https://" required>
+            <button class="btn btn-outline-light text-uppercase text-primary px-5 py-0 popup-form__button popup-form__button_white" type="button">Подключить</button>
+        	</div>
+        	<div class="popup-wrap">
+            <span class="text-muted mr-sm-auto">Каналы</span>
+            <input type="text" class="popup-input pl-3 w-100" required>
+         </div>
+         <div class="popup-wrap">
+          <span class="text-muted mr-3 mr-sm-auto">Способ публикации</span>
+          <select name="Способ" class="popup-select pr-5">
+            <option value="schedule">Расписание Вт, 14:00</option>
+            <option value="account">Аккаунты</option>
+            <option value="post">Публикации</option>
+            <option value="image">Изображения</option>
+            <option value="social">Социальные сети</option>
+            <option value="calendar">Календарь</option>
+            <option value="functions">Функции</option>
+            <option value="water-mark">Вотермарки</option>
+            <option value="rss">RSS</option>
+          </select>
+         </div>
+        </div>
+        <div class="popup-wrap popup-wrap_image pt-3 d-flex flex-column">
+        	<img src="https://avatars.mds.yandex.net/get-pdb/477388/55f51d9f-bef4-4d13-9898-33f350dc3bf6/s1200" alt="image" class="popup-image__block mb-2 pr-5 d-none d-md-block">
+        	<textarea required name="popup-wrap__descr" class="popup-text popup-text__descr-image"></textarea>
+          <button class="btn btn-outline-light text-uppercase text-primary px-2 py-2 popup-form__button popup-form__button_white align-self-end" type="button">Настроить</button>
+        </div>
+        <div class="popup-wrap">        	
+          <span class="text-muted mr-1 w-50 mr-sm-auto">Стоп-слова</span>
+          <input type="text" class="popup-input w-100" required>
+        </div>
+        <div class="popup-wrap">        	
+          <span class="text-muted mr-1 w-50 mr-sm-auto">Добавить текст</span>
+          <input type="text" class="popup-input w-100" required>
+        </div>
+        <div class="popup-wrap">
+        		<img src="img/single/menu_func.png" alt="icon" class="h-50 mr-3">
+        		<span class="text-muted mr-3 mr-sm-2">Выберите функцию</span>
+          <select name="function" placeholder="Jps" class="w-50 popup-select pr-5">
+           <option value="account">Аккаунт</option>
+           <option value="post">Публикации</option>
+           <option value="image">Изображения</option>
+           <option value="social">Социальные сети</option>
+           <option value="calendar">Календарь</option>
+           <option value="functions">Функции</option>
+           <option value="water-mark">Вотермарки</option>
+           <option value="rss">RSS</option>
+           <option value="schedule">Расписание</option>
+          </select>
+        </div>       	
+       	<div class="input-check w-100 ml-3 mt-3 d-none d-md-block">
+					<input type="checkbox" id="checkBox01" />
+					<label for="checkBox01">Использовать изображение?</label>
+				</div>
+        <div class="popup-form pt-2 pb-4 px-3 d-flex w-100 justify-content-end">
+         <button class="btn btn-primary text-uppercase text-white px-5 py-2 popup-form__button" type="submit">Подключить</button>
+	       </div>
+       </div>
+      </form>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.6.1/js/all.js" integrity="sha384-R5JkiUweZpJjELPWqttAYmYM1P3SNEJRM6ecTQF05pFFtxmCO+Y1CiUhvuDzgSVZ" crossorigin="anonymous"></script>
+    <script>
+      $(document).ready(function(){
+
+        var link = $('.menu-link');
+        var menu = $('.nav-wrap');
+        var page = $('.page-wrap');
+
+        link.click(function(){
+          menu.toggleClass('nav-wrap_active')
+          link.toggleClass('menu-link_active')
+          page.toggleClass('page-wrap_active')
+        })
+
+        var btn = $('.single__button')
+        var pop = $('.popup')
+        var popClose = $('.popup-close')
+
+        btn.on("click", function(){
+          pop.show()
+        });
+
+        popClose.on("click", function(){
+          pop.hide()
+        });
+
+      });
+    </script>
+  </body>
+</html>

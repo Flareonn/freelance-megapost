@@ -8,16 +8,17 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="css/style.css" crossorigin="anonymous">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
 
     <title>MEGAPOST</title>
   </head>
   <body style="background: #F6F6F6">
     <aside class="nav-wrap d-flex justify-content-between flex-column bg-dark h-100 pb-4">
-      <ul class="nav flex-column w-100">
-        <li class="nav__logo-wrap my-4">
+    	<ul class="nav flex-column w-100">
+    		<li class="nav__logo-wrap my-4">
           <a href="#">
-            <picture class="nav__logo nav-link">
+      			<picture class="nav__logo nav-link">
               <source srcset="img/logo.png 1x,
                               img/logo-2x.png 2x,
                               img/logo-3x.png 3x"
@@ -27,59 +28,59 @@
                    alt="Logo">    
             </picture>
           </a>
-        </li>
-        <li class="justify-content-center d-flex px-3">
-          <button class="nav-link btn btn-primary text-uppercase nav__button align-items-center d-flex justify-content-center w-100">
+    		</li>
+    		<li class="justify-content-center d-flex px-3">
+      		<button class="nav-link btn btn-primary text-uppercase nav__button align-items-center d-flex justify-content-center w-100">
             <img src="img/single/icon_plus_white.png" alt="plus" class="nav-icon mr-3">
             Создать пост
-          </button>         
-        </li>
-        <li class="nav-item">
+          </button>    			
+    		</li>
+    		<li class="nav-item">
           <a href="#" class="nav-link text-white-50">
             <img src="img/single/menu_pub_active.png" alt="icon" class="mr-3 nav-icon">Публикации
           </a>
-        </li>
-        <li class="nav-item">
-          <a href="#" class="nav-link text-white-50">
+    		</li>
+    		<li class="nav-item">
+    			<a href="#" class="nav-link text-white-50">
             <img src="img/single/menu_cal_active.png" alt="icon" class="mr-3 nav-icon">Календарь
           </a>
-        </li>
-        <li class="nav-item">
-          <a href="#" class="nav-link text-white-50">
+    		</li>
+    		<li class="nav-item">
+    			<a href="#" class="nav-link text-white-50">
             <img src="img/single/menu_list_active.png" alt="icon" class="mr-3 nav-icon">Списки
           </a>
-        </li>
-        <li class="nav-item">
-          <a href="#" class="nav-link text-white-50">
+    		</li>
+    		<li class="nav-item">
+    			<a href="#" class="nav-link text-white-50">
             <img src="img/single/menu_acc_active.png" alt="icon" class="mr-3 nav-icon">Аккаунты
           </a>
-        </li>
-        <li class="nav-item">
-          <a href="#" class="nav-link text-white-50">
+    		</li>
+    		<li class="nav-item">
+    			<a href="index.html" class="nav-link text-white-50">
             <img src="img/single/menu_sch_active.png" alt="icon" class="mr-3 nav-icon active">Расписание
           </a>
-        </li>
-        <li class="nav-item">
-          <a href="#" class="nav-link text-white-50">
+    		</li>
+    		<li class="nav-item">
+    			<a href="#" class="nav-link text-white-50">
             <img src="img/single/menu_func_active.png" alt="icon" class="mr-3 nav-icon">Функции
           </a>
-        </li>
-        <li class="nav-item">
-          <a href="#" class="nav-link text-white-50">
+    		</li>
+    		<li class="nav-item">
+    			<a href="rss.html" class="nav-link text-white-50">
             <img src="img/single/menu_rss_active.png" alt="icon" class="mr-3 nav-icon">RSS
           </a>
-        </li>
-        <li class="nav-item">
-          <a href="#" class="nav-link text-white-50">
+    		</li>
+    		<li class="nav-item">
+    			<a href="#" class="nav-link text-white-50">
             <img src="img/single/menu_wm_active.png" alt="icon" class="mr-3 nav-icon">Вотермарки
           </a>
-        </li>
-        <li class="nav-item">
-          <a href="#" class="nav-link text-white-50">
+    		</li>
+    		<li class="nav-item">
+    			<a href="#" class="nav-link text-white-50">
             <img src="img/single/menu_img_active.png" alt="icon" class="mr-3 nav-icon">Изображения
           </a>
-        </li>
-      </ul>
+    		</li>
+    	</ul>
       <div class="nav__footer w-100">
         <h6 class="nav__footer-title pl-4 text-uppercase text-white-50 mb-4">
           Мы в соцсетях
@@ -141,143 +142,320 @@
         
       </i>
     </button>
-		<div class="page-wrap pt-4 pr-sm-5">
+    <div class="page-wrap pt-4 pr-sm-5">
       <header class="page__header mb-xl-0 mb-lg-4 d-flex justify-content-sm-between justify-content-around align-items-center">
-        <h1 class="page__title mb-0">Поддержка</h1>
+        <h1 class="page__title mb-0">Расписания</h1>
         <div class="page-icons flex-sm-row d-flex align-items-center fa-lg">
           <span class="fa-layers fa-fw mr-sm-4 d-none d-sm-block">
-            <img src="img/single/icon_notice.png" alt="icon" class="page-icon page-icon_notice">
-            <span class="fa-layers-counter fa-lg"><strong>1</strong></span>
+           <img src="img/single/icon_notice.png" alt="icon" class="page-icon page-icon_notice">
+           <span class="fa-layers-counter fa-lg"><strong>1</strong></span>
           </span>
           <img src="img/single/icon_settings.png" alt="icon" class="page-icon mr-sm-4 d-none d-sm-block">
-          <img src="img/single/icon_info.png" alt="icon" class="page-icon mr-sm-5 d-none d-sm-block">
-          <a href="#" class="fa-layers fa-fw mr-sm-2 icon-profile">
-            <i class="fas fa-square fa-2x"></i>
-            <span class="fa-layers-text fa-inverse" data-fa-transform="right-4">A</span>
+          <a href="technical-support.html">
+            <img src="img/single/icon_info.png" alt="icon" class="page-icon mr-sm-5 d-none d-sm-block">
           </a>
-          <!--<img src="#" alt="Image_user" class="page__icon">-->
+          <a href="#" class="fa-layers fa-fw mr-sm-2 icon-profile">
+           <i class="fas fa-square fa-2x"></i>
+           <span class="fa-layers-text fa-inverse" data-fa-transform="right-4">A</span>
+          </a>
+           <!--<img src="#" alt="Image_user" class="page__icon">-->
         </div>
       </header>
-			<div class="row align-items-xl-start align-item-center mt-4">
-				<div class="single__title-wrap text-center text-sm-left col-12 col-xl-6 order-xl-1">
-					<h3 class="single__title">Популярные вопросы</h3>
-					<p class="single__descr">Если у вас возникла проблема, поищите вначале ответ в наших заранее заготовленных ответах</p>
-				</div>
-				<div class="single__title-wrap text-center text-sm-left col-12 col-xl-4 col-md-8 order-xl-2 order-3">
-					<h3 class="single__title">Мои вопросы</h3>
-					<p class="single__descr">Здесь список уже заданных вами вопросов, вы можете увидеть их текущий статус</p>
-				</div>
-				<div class="single__button-wrap col-12 col-md-4 d-flex col-xl-2 justify-content-md-end justify-content-center mb-3 mb-md-0 h-25 order-xl-3 order-4">
-					<button class="btn px-sm-4 px-md-2 px-lg-3 px-xl-5 btn-primary text-uppercase">Задать вопрос
-          </button>
-				</div>
-        <div class="col-12 col-xl-6 order-xl-4">
-          <form id="list" class="question-block px-sm-3 py-2 bg-white">
-              <input type="radio" class="question-block__list" id="id1" name="name1" checked>
-              <label for="id1" class="question-block__list btn btn-outline-light w-100 d-flex justify-content-between align-items-center"><p class="text-muted px-3 m-0">Аккаунты</p><img src="img/single/menu_arrow_active.png" alt="icon" class="icon-question-block"></label>
-              <span class="question-block__article">
-                <h6 class="question-block__list-title">We're here to help you become an expert marketer. Ready to get starsssted?</h6>
-                <p class="question-block__list-text pl-3">In this article, you'll learn how to start using Mailchimp to create awesome campaigns, and we'll provide some helpful resources to use as you work.</p>
-                <h6 class="question-block__list-title">Symbol is a powerful feature in Sketch that allows you to reuse elements easily across your document's Artboards and Pages, or even multiple documents.</h6>
-                <p class="question-block__list-text pl-3">In this article, you'll learn how to start using Mailchimp to create awesome campaigns, and we'll provide some helpful resources to use as you work.In this article, you'll learn how to start using Mailchimp to create awesome campaigns, and we'll provide some helpful resources to use as you work.</p>
-              </span>
-
-              <input type="radio" class="question-block__list" id="id2" name="name1">
-              <label for="id2" class="question-block__list btn btn-outline-light w-100 d-flex justify-content-between align-items-center"><p class="text-muted px-3 m-0">Публикации</p><img src="img/single/menu_arrow_active.png" alt="icon" class="icon-question-block"></label>
-              <span class="question-block__article">
-                <h6 class="question-block__list-title">We're here to help you become an expert marketer. Ready to get starsssted?</h6>
-                <p class="question-block__list-text pl-3">In this article, you'll learn how to start using Mailchimp to create awesome campaigns, and we'll provide some helpful resources to use as you work.</p>
-                <h6 class="question-block__list-title">Symbol is a powerful feature in Sketch that allows you to reuse elements easily across your document's Artboards and Pages, or even multiple documents.</h6>
-                <p class="question-block__list-text pl-3">In this article, you'll learn how to start using Mailchimp to create awesome campaigns, and we'll provide some helpful resources to use as you work.In this article, you'll learn how to start using Mailchimp to create awesome campaigns, and we'll provide some helpful resources to use as you work.</p>
-              </span>
-
-              <input type="radio" class="question-block__list" id="id3" name="name1">
-              <label for="id3" class="question-block__list btn btn-outline-light w-100 d-flex justify-content-between align-items-center"><p class="text-muted px-3 m-0">Изображения</p><img src="img/single/menu_arrow_active.png" alt="icon" class="icon-question-block"></label>
-              <span class="question-block__article">
-                <h6 class="question-block__list-title">We're here to help you become an expert marketer. Ready to get starsssted?</h6>
-                <p class="question-block__list-text pl-3">In this article, you'll learn how to start using Mailchimp to create awesome campaigns, and we'll provide some helpful resources to use as you work.</p>
-                <h6 class="question-block__list-title">Symbol is a powerful feature in Sketch that allows you to reuse elements easily across your document's Artboards and Pages, or even multiple documents.</h6>
-                <p class="question-block__list-text pl-3">In this article, you'll learn how to start using Mailchimp to create awesome campaigns, and we'll provide some helpful resources to use as you work.In this article, you'll learn how to start using Mailchimp to create awesome campaigns, and we'll provide some helpful resources to use as you work.</p>
-              </span>
-
-              <input type="radio" class="question-block__list" id="id4" name="name1">
-              <label for="id4" class="question-block__list btn btn-outline-light w-100 d-flex justify-content-between align-items-center"><p class="text-muted px-3 m-0">Социальные сети</p><img src="img/single/menu_arrow_active.png" alt="icon" class="icon-question-block"></label>
-              <span class="question-block__article">
-                <h6 class="question-block__list-title">We're here to help you become an expert marketer. Ready to get starsssted?</h6>
-                <p class="question-block__list-text pl-3">In this article, you'll learn how to start using Mailchimp to create awesome campaigns, and we'll provide some helpful resources to use as you work.</p>
-                <h6 class="question-block__list-title">Symbol is a powerful feature in Sketch that allows you to reuse elements easily across your document's Artboards and Pages, or even multiple documents.</h6>
-                <p class="question-block__list-text pl-3">In this article, you'll learn how to start using Mailchimp to create awesome campaigns, and we'll provide some helpful resources to use as you work.In this article, you'll learn how to start using Mailchimp to create awesome campaigns, and we'll provide some helpful resources to use as you work.</p>
-              </span>
-
-              <input type="radio" class="question-block__list" id="id5" name="name1">
-              <label for="id5" class="question-block__list btn btn-outline-light w-100 d-flex justify-content-between align-items-center"><p class="text-muted px-3 m-0">Календарь</p><img src="img/single/menu_arrow_active.png" alt="icon" class="icon-question-block"></label>
-              <span class="question-block__article">
-                <h6 class="question-block__list-title">We're here to help you become an expert marketer. Ready to get starsssted?</h6>
-                <p class="question-block__list-text pl-3">In this article, you'll learn how to start using Mailchimp to create awesome campaigns, and we'll provide some helpful resources to use as you work.</p>
-                <h6 class="question-block__list-title">Symbol is a powerful feature in Sketch that allows you to reuse elements easily across your document's Artboards and Pages, or even multiple documents.</h6>
-                <p class="question-block__list-text pl-3">In this article, you'll learn how to start using Mailchimp to create awesome campaigns, and we'll provide some helpful resources to use as you work.In this article, you'll learn how to start using Mailchimp to create awesome campaigns, and we'll provide some helpful resources to use as you work.</p>
-              </span>
-
-              <input type="radio" class="question-block__list" id="id6" name="name1">
-              <label for="id6" class="question-block__list btn btn-outline-light w-100 d-flex justify-content-between align-items-center"><p class="text-muted px-3 m-0">Функции</p><img src="img/single/menu_arrow_active.png" alt="icon" class="icon-question-block"></label>
-              <span class="question-block__article">
-                <h6 class="question-block__list-title">We're here to help you become an expert marketer. Ready to get starsssted?</h6>
-                <p class="question-block__list-text pl-3">In this article, you'll learn how to start using Mailchimp to create awesome campaigns, and we'll provide some helpful resources to use as you work.</p>
-                <h6 class="question-block__list-title">Symbol is a powerful feature in Sketch that allows you to reuse elements easily across your document's Artboards and Pages, or even multiple documents.</h6>
-                <p class="question-block__list-text pl-3">In this article, you'll learn how to start using Mailchimp to create awesome campaigns, and we'll provide some helpful resources to use as you work.In this article, you'll learn how to start using Mailchimp to create awesome campaigns, and we'll provide some helpful resources to use as you work.</p>
-              </span>
-
-              <input type="radio" class="question-block__list" id="id7" name="name1">
-              <label for="id7" class="question-block__list btn btn-outline-light w-100 d-flex justify-content-between align-items-center"><p class="text-muted px-3 m-0">Вотермарки</p><img src="img/single/menu_arrow_active.png" alt="icon" class="icon-question-block"></label>
-              <span class="question-block__article">
-                <h6 class="question-block__list-title">We're here to help you become an expert marketer. Ready to get starsssted?</h6>
-                <p class="question-block__list-text pl-3">In this article, you'll learn how to start using Mailchimp to create awesome campaigns, and we'll provide some helpful resources to use as you work.</p>
-                <h6 class="question-block__list-title">Symbol is a powerful feature in Sketch that allows you to reuse elements easily across your document's Artboards and Pages, or even multiple documents.</h6>
-                <p class="question-block__list-text pl-3">In this article, you'll learn how to start using Mailchimp to create awesome campaigns, and we'll provide some helpful resources to use as you work.In this article, you'll learn how to start using Mailchimp to create awesome campaigns, and we'll provide some helpful resources to use as you work.</p>
-              </span>
-
-              <input type="radio" class="question-block__list" id="id8" name="name1">
-              <label for="id8" class="question-block__list btn btn-outline-light w-100 d-flex justify-content-between align-items-center"><p class="text-muted px-3 m-0">RSS</p><img src="img/single/menu_arrow_active.png" alt="icon" class="icon-question-block"></label>
-              <span class="question-block__article">
-                <h6 class="question-block__list-title">We're here to help you become an expert marketer. Ready to get starsssted?</h6>
-                <p class="question-block__list-text pl-3">In this article, you'll learn how to start using Mailchimp to create awesome campaigns, and we'll provide some helpful resources to use as you work.</p>
-                <h6 class="question-block__list-title">Symbol is a powerful feature in Sketch that allows you to reuse elements easily across your document's Artboards and Pages, or even multiple documents.</h6>
-                <p class="question-block__list-text pl-3">In this article, you'll learn how to start using Mailchimp to create awesome campaigns, and we'll provide some helpful resources to use as you work.In this article, you'll learn how to start using Mailchimp to create awesome campaigns, and we'll provide some helpful resources to use as you work.</p>
-              </span>
-
-              <input type="radio" class="question-block__list" id="id9" name="name1">
-              <label for="id9" class="question-block__list btn btn-outline-light w-100 d-flex justify-content-between align-items-center"><p class="text-muted px-3 m-0">Расписание</p><img src="img/single/menu_arrow_active.png" alt="icon" class="icon-question-block"></label>
-              <span class="question-block__article">
-                <h6 class="question-block__list-title">We're here to help you become an expert marketer. Ready to get starsssted?</h6>
-                <p class="question-block__list-text pl-3">In this article, you'll learn how to start using Mailchimp to create awesome campaigns, and we'll provide some helpful resources to use as you work.</p>
-                <h6 class="question-block__list-title">Symbol is a powerful feature in Sketch that allows you to reuse elements easily across your document's Artboards and Pages, or even multiple documents.</h6>
-                <p class="question-block__list-text pl-3">In this article, you'll learn how to start using Mailchimp to create awesome campaigns, and we'll provide some helpful resources to use as you work.In this article, you'll learn how to start using Mailchimp to create awesome campaigns, and we'll provide some helpful resources to use as you work.</p>
-              </span>
-          </form>
+      <div class="row align-items-xl-start align-item-center mt-4">
+        <div class="single__title-wrap text-center text-sm-left col-12 col-md-8 col-xl-5 order-xl-1">
+          <h3 class="single__title">Создайте расписание</h3>
+          <p class="single__descr">Расписание позволяет публиковать посты по заранее заданным параметрам</p>
         </div>
-        <div class="col-12 col-xl-6 order-5">
-            <section class="question-block px-sm-3 py-2 bg-white d-flex flex-column">
-              <article class="question-block__article p-3">
-                <h5 class="question-block__category text-muted">Изображения</h5>
-                <h6 class="question-block__list-title mt-4">Почему у меня не загружается картинка?</h6>
-                <p class="question-block__list-text pl-3">На данный момент ожидается ответ модератором</p>
-              </article>
-              <div class="justify-content-end d-flex"><button class="btn btn-outline-light text-uppercase text-primary question-block__button"><b>Удалить вопрос</b></button></div>
-            </section>
-            <section class="question-block px-3 py-2 bg-white d-flex flex-column">
-              <article class="question-block__article p-3">
-                <h5 class="question-block__category text-muted">Аккаунт</h5>
-                <h6 class="question-block__list-title mt-4">Почему не приходит восстановление пароля?</h6>
-                <p class="question-block__list-text pl-3">Проверьте правильно введенной почты. Если проблема осталась, то смените адрес почты</p>
-              </article>
-              <div class="justify-content-end d-flex"><button class="btn btn-outline-light text-uppercase text-primary question-block__button"><b>Ответить</b></button></div>
-            </section>
+        <div class="single__button-wrap col-12 col-md-4 d-flex col-xl-7 justify-content-md-end justify-content-center mb-3 mb-md-0 h-25 order-xl-3 order-4">
+          <button class="btn px-sm-4 px-md-2 px-lg-3 px-xl-4 btn-primary single__button text-uppercase">
+            Создать расписание
+          </button>
         </div>
       </div>
-		</div>
+        <div class="schedule-block my-4">
+          <div class="schedule-top d-flex justify-content-between mb-4">
+            <div class="d-flex align-items-center">
+              <h5 class="schedule__title mb-0 mr-lg-3">Театр для детей и взрослых</h5>
+              <button class=" schedule__button mr-3">
+                <img src="img/single/icon_edit.png" alt="icon-edit">
+              </button>
+              <button class="schedule__button">
+                <img src="img/single/icon_remove.png" alt="icon-remove">
+              </button>
+            </div>
+            <h5 class="schedule__data">
+              вт 16:00
+            </h5>
+          </div>
+          <div class="schedule-board">
+            <div class="card schedule-card mr-sm-2">
+              <div class="card-body">
+                <div class="d-flex justify-content-between align-items-center">
+                  <h5 class="card-title mb-0 mr-3">Детский театр</h5>
+                  <div class="card-group-button">
+                    <button class=" schedule__button mr-3">
+                      <img src="img/single/icon_edit.png" alt="icon-edit">
+                    </button>
+                    <button class="schedule__button">
+                      <img src="img/single/icon_remove.png" alt="icon-remove">
+                    </button>
+                  </div>
+                </div>
+                <p class="card-text text-muted schedule-card__descr">Marvel puts the power of design in everyones heads, leading to better ideas, innovation and culture.</p>
+              </div>
+              <img class="card-img-top px-3" src="https://ds04.infourok.ru/uploads/ex/0664/001157fb-392be141/hello_html_m50ae6ad3.jpg" alt="Card image cap">
+              <div class="card-body d-flex align-items-center justify-content-between card-white">
+                <div class="card-social">
+                  <a href="vk.com">
+                    <img src="img/single/vk.png" class="card-icon__social mr-2" alt="social-icon">
+                  </a>
+                  <a href="fb.com">
+                    <img src="img/single/fb.png" class="card-icon__social mr-2" alt="social-icon">
+                  </a>
+                  <a href="ok.com">
+                    <img src="img/single/ok.png" class="card-icon__social mr-2" alt="social-icon">
+                  </a>
+                  <a href="twitter.com">
+                    <img src="img/single/tw.png" class="card-icon__social mr-2" alt="social-icon">
+                  </a>
+                </div>
+                <button class="card__button">
+                  <img src="img/single/icon_action.png" alt="icon" class="card-icon__action">
+                </button>
+              </div>
+            </div>
+            <div class="card schedule-card mr-sm-2">
+              <div class="card-body">
+                <div class="d-flex justify-content-between align-items-center">
+                  <h5 class="card-title mb-0 mr-3">Детский театр</h5>
+                  <div class="card-group-button">
+                    <button class=" schedule__button mr-3">
+                      <img src="img/single/icon_edit.png" alt="icon-edit">
+                    </button>
+                    <button class="schedule__button">
+                      <img src="img/single/icon_remove.png" alt="icon-remove">
+                    </button>
+                  </div>
+                </div>
+                <p class="card-text text-muted schedule-card__descr">Marvel puts the power of design in everyones heads, leading to better ideas, innovation and culture.</p>
+              </div>
+              <img class="card-img-top px-3" src="https://bfm74.ru/upload/resize_cache/iblock/a7b/850_478_2/a7b66598663a769bf3cce691e2c3cc2c.png" alt="Card image cap">
+              <div class="card-body d-flex align-items-center justify-content-between card-white">
+                <div class="card-social">
+                  <a href="vk.com">
+                    <img src="img/single/vk.png" class="card-icon__social mr-2" alt="social-icon">
+                  </a>
+                  <a href="fb.com">
+                    <img src="img/single/fb.png" class="card-icon__social mr-2" alt="social-icon">
+                  </a>
+                  <a href="ok.com">
+                    <img src="img/single/ok.png" class="card-icon__social mr-2" alt="social-icon">
+                  </a>
+                  <a href="twitter.com">
+                    <img src="img/single/tw.png" class="card-icon__social mr-2" alt="social-icon">
+                  </a>
+                </div>
+                <button class="card__button">
+                  <img src="img/single/icon_action.png" alt="icon" class="card-icon__action">
+                </button>
+              </div>
+            </div>
+            <div class="card schedule-card mr-sm-2">
+              <div class="card-body">
+                <div class="d-flex justify-content-between align-items-center">
+                  <h5 class="card-title mb-0 mr-3">Детский театр</h5>
+                  <div class="card-group-button">
+                    <button class=" schedule__button mr-3">
+                      <img src="img/single/icon_edit.png" alt="icon-edit">
+                    </button>
+                    <button class="schedule__button">
+                      <img src="img/single/icon_remove.png" alt="icon-remove">
+                    </button>
+                  </div>
+                </div>
+                <p class="card-text text-muted schedule-card__descr">Marvel puts the power of design in everyones heads, leading to better ideas, innovation and culture.</p>
+              </div>
+              <img class="card-img-top px-3" src="https://avatars.mds.yandex.net/get-pdb/70729/56849fee-5002-4054-b8e2-ef87fb3c5b8f/s1200?webp=false" alt="Card image cap">
+              <div class="card-body d-flex align-items-center justify-content-between card-white">
+                <div class="card-social">
+                  <a href="vk.com">
+                    <img src="img/single/vk.png" class="card-icon__social mr-2" alt="social-icon">
+                  </a>
+                  <a href="fb.com">
+                    <img src="img/single/fb.png" class="card-icon__social mr-2" alt="social-icon">
+                  </a>
+                  <a href="ok.com">
+                    <img src="img/single/ok.png" class="card-icon__social mr-2" alt="social-icon">
+                  </a>
+                  <a href="twitter.com">
+                    <img src="img/single/tw.png" class="card-icon__social mr-2" alt="social-icon">
+                  </a>
+                </div>
+                <button class="card__button">
+                  <img src="img/single/icon_action.png" alt="icon" class="card-icon__action">
+                </button>
+              </div>
+            </div>
+            <div class="card schedule-card mr-sm-2">
+              <div class="card-body">
+                <div class="d-flex justify-content-between align-items-center">
+                  <h5 class="card-title mb-0 mr-3">Детский театр</h5>
+                  <div class="card-group-button">
+                    <button class=" schedule__button mr-3">
+                      <img src="img/single/icon_edit.png" alt="icon-edit">
+                    </button>
+                    <button class="schedule__button">
+                      <img src="img/single/icon_remove.png" alt="icon-remove">
+                    </button>
+                  </div>
+                </div>
+                <p class="card-text text-muted schedule-card__descr">Marvel puts the power of design in everyones heads, leading to better ideas, innovation and culture.</p>
+              </div>
+              <img class="card-img-top px-3" src="http://www.bileti-v-teatr.ru/media/theaters/photos/ermitaznii-teatr_-_2.jpg" alt="Card image cap">
+              <div class="card-body d-flex align-items-center justify-content-between card-white">
+                <div class="card-social">
+                  <a href="vk.com">
+                    <img src="img/single/vk.png" class="card-icon__social mr-2" alt="social-icon">
+                  </a>
+                  <a href="fb.com">
+                    <img src="img/single/fb.png" class="card-icon__social mr-2" alt="social-icon">
+                  </a>
+                  <a href="ok.com">
+                    <img src="img/single/ok.png" class="card-icon__social mr-2" alt="social-icon">
+                  </a>
+                  <a href="twitter.com">
+                    <img src="img/single/tw.png" class="card-icon__social mr-2" alt="social-icon">
+                  </a>
+                </div>
+                <button class="card__button">
+                  <img src="img/single/icon_action.png" alt="icon" class="card-icon__action">
+                </button>
+              </div>
+            </div>
+            <div class="schedule-board__footer text-muted justify-content-between d-flex align-items-center card-white py-3">
+              <div class="">
+                <img src="img/single/menu_list.png" alt="icon" class="card-icon mr-3">
+                  Театральное
+              </div>
+              <div class="group-button">
+                <button class="schedule__button mr-3">
+                  <img src="img/single/icon_arrow_left.png" alt="arrow">
+                </button>
+                <button class="schedule__button">
+                  <img src="img/single/icon_arrow_right.png" alt="arrow">
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="schedule-block my-4">
+          <div class="schedule-top d-flex justify-content-between mb-4">
+            <div class="d-flex align-items-center">
+              <h5 class="schedule__title mb-0 mr-lg-3">Природа</h5>
+              <button class=" schedule__button mr-3">
+                <img src="img/single/icon_edit.png" alt="icon-edit">
+              </button>
+              <button class="schedule__button">
+                <img src="img/single/icon_remove.png" alt="icon-remove">
+              </button>
+            </div>
+            <h5 class="schedule__data">
+              вт 18:00, чт 16:00
+            </h5>
+          </div>
+          <div class="schedule-board">
+            <div class="card schedule-card mr-sm-2">
+              <div class="card-body">
+                <div class="d-flex justify-content-between align-items-center">
+                  <h5 class="card-title mb-0 mr-3">Юг</h5>
+                  <div class="card-group-button">
+                    <button class=" schedule__button mr-3">
+                      <img src="img/single/icon_edit.png" alt="icon-edit">
+                    </button>
+                    <button class="schedule__button">
+                      <img src="img/single/icon_remove.png" alt="icon-remove">
+                    </button>
+                  </div>
+                </div>
+                <p class="card-text text-muted schedule-card__descr">Marvel puts the power of design in everyones heads, leading to better ideas, innovation and culture.</p>
+              </div>
+              <img class="card-img-top px-3" src="https://d1nslcd7m2225b.cloudfront.net/Pictures/2000x2000fit/1/8/8/1151188_cape-town.jpg" alt="Card image cap">
+              <div class="card-body d-flex align-items-center justify-content-between card-white">
+                <div class="card-social">
+                  <a href="vk.com">
+                    <img src="img/single/vk.png" class="card-icon__social mr-2" alt="social-icon">
+                  </a>
+                  <a href="fb.com">
+                    <img src="img/single/fb.png" class="card-icon__social mr-2" alt="social-icon">
+                  </a>
+                  <a href="ok.com">
+                    <img src="img/single/ok.png" class="card-icon__social mr-2" alt="social-icon">
+                  </a>
+                  <a href="twitter.com">
+                    <img src="img/single/tw.png" class="card-icon__social mr-2" alt="social-icon">
+                  </a>
+                </div>
+                <button class="card__button">
+                  <img src="img/single/icon_action.png" alt="icon" class="card-icon__action">
+                </button>
+              </div>
+            </div>
+            <div class="card schedule-card mr-sm-2">
+              <div class="card-body">
+                <div class="d-flex justify-content-between align-items-center">
+                  <h5 class="card-title mb-0 mr-3">Индонезия</h5>
+                  <div class="card-group-button">
+                    <button class=" schedule__button mr-3">
+                      <img src="img/single/icon_edit.png" alt="icon-edit">
+                    </button>
+                    <button class="schedule__button">
+                      <img src="img/single/icon_remove.png" alt="icon-remove">
+                    </button>
+                  </div>
+                </div>
+                <p class="card-text text-muted schedule-card__descr">Marvel puts the power of design in everyones hands</p>
+              </div>
+              <img class="card-img-top px-3" src="http://mtdata.ru/u24/photoDCE4/20413990181-0/original.jpg" alt="Card image cap">
+              <div class="card-body d-flex align-items-center justify-content-between card-white">
+                <div class="card-social">
+                  <a href="vk.com">
+                    <img src="img/single/vk.png" class="card-icon__social mr-2" alt="social-icon">
+                  </a>
+                  <a href="fb.com">
+                    <img src="img/single/fb.png" class="card-icon__social mr-2" alt="social-icon">
+                  </a>
+                  <a href="ok.com">
+                    <img src="img/single/ok.png" class="card-icon__social mr-2" alt="social-icon">
+                  </a>
+                  <a href="twitter.com">
+                    <img src="img/single/tw.png" class="card-icon__social mr-2" alt="social-icon">
+                  </a>
+                </div>
+                <button class="card__button">
+                  <img src="img/single/icon_action.png" alt="icon" class="card-icon__action">
+                </button>
+              </div>
+            </div>
+            <div class="schedule-board__footer text-muted justify-content-between d-flex align-items-center card-white py-3">
+              <div class="">
+                <img src="img/single/menu_list.png" alt="icon" class="card-icon mr-3">
+                  Вставьте текст
+              </div>
+              <div class="group-button">
+                <button class="schedule__button mr-3">
+                  <img src="img/single/icon_arrow_left.png" alt="arrow">
+                </button>
+                <button class="schedule__button">
+                  <img src="img/single/icon_arrow_right.png" alt="arrow">
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
     <div class="popup">
       <div class="popup-top bg-primary text-white d-flex justify-content-between align-items-center">
-        <h6 class="popup__title mb-0 py-2 pl-3">Вопрос</h6>
+        <h6 class="popup__title mb-0 py-2 pl-3">Новое расписание</h6>
         <div class="popup-top__icons pr-3">
           <span class="popup-minimize"><i class="far fa-fw fa-window-minimize"></i></span>
           <span class="popup-scale"><i class="fas fa-fw fa-arrows-alt-h" data-fa-transform="rotate--45"></i></span>
@@ -285,34 +463,81 @@
         </div>
       </div>
       <form action="#">
-        <div class="popup-middle bg-white">
-          <div class="popup__descr px-3 d-flex flex-row align-items-center">
-            <span class="text-muted w-25 mr-3 mr-sm-auto">Категория</span>
-            <select name="Категория" class="popup-select w-75">
-              <option value="account">Аккаунт</option>
-              <option value="post">Публикации</option>
-              <option value="image">Изображения</option>
-              <option value="social">Социальные сети</option>
-              <option value="calendar">Календарь</option>
-              <option value="functions">Функции</option>
-              <option value="water-mark">Вотермарки</option>
-              <option value="rss">RSS</option>
-              <option value="schedule">Расписание</option>
+       <div class="popup-middle bg-white flex-column d-flex justify-content-between align-items-center">
+        <div class="popup__descr popup__descr_schedule px-3">
+         <div class="popup-wrap">
+          <input type="text" class="popup-input w-100" placeholder="Напишите название" required>
+         </div>
+         <div class="popup-wrap d-flex justify-content-between">
+          <input type="text" class="popup-input w-100" placeholder="Добавить посты" required>
+          <div class="popup-icon">
+            <img src="img/single/icon_plus.png" alt="popup-icon">
+          </div>
+         </div>
+         <div class="popup-wrap d-flex justify-content-between">
+          <div class="popup-icon mr-3">
+            <img src="img/single/icon_list.png" alt="popup-icon">
+          </div>
+          <input type="text" class="popup-input w-100" placeholder="Выбрать список" required>
+          <div class="popup-icon">
+            <img src="img/single/icon_plus.png" alt="popup-icon">
+          </div>
+         </div>
+         <div class="popup-wrap mt-3">
+            <select name="dayOfWeek" class="popup-select pr-5 w-100">
+              <option value="rss">Воскресенье</option>
+              <option value="rss">Понедельник</option>
+              <option value="rss">Вторник</option>
+              <option value="rss">Среда</option>
+              <option value="rss">Четверег</option>
+              <option value="rss">Пятница</option>
+              <option value="rss">Суббота</option>
             </select>
           </div>
-          <textarea required name="popup-user-text" class="py-3 pl-3 pr-5 popup-text"></textarea>
-          <div class="popup-form pt-2 pb-4 px-3 d-flex justify-content-sm-end flex-column-reverse flex-sm-row">
-            <button class="btn btn-outline-light text-uppercase text-primary px-5 py-2 popup-form__button popup-form__button_white" type="button">Отмена</button>
-            <button class="btn btn-primary text-uppercase text-white px-5 py-2 popup-form__button" type="submit">Отправить</button>
+          <div class="popup-wrap d-flex justify-content-between">
+            <div class="popup-select mr-3">
+              <label for="appTime" class="mr-3">Время</label>
+              <input type="time" id="appTime" class="popup-input">
+            </div>
+
+            <span>или</span>
+
+            <div class="popup-select ml-5">
+              <label for="appEveryTime">Каждые</label>
+              <input type="time" id="appEveryTime" class="popup-input">
+            </div>
           </div>
-        </div>
+         <div class="popup-wrap mt-2 d-flex justify-content-between">
+          <input type="text" class="popup-input w-100" placeholder="Добавить день" required>
+          <div class="popup-icon">
+            <img src="img/single/icon_plus.png" alt="popup-icon">
+          </div>
+         </div>
+         <div class="popup-form pt-2 pb-4 px-3 d-flex justify-content-sm-end flex-column-reverse flex-sm-row">
+          <button class="btn btn-outline-light text-uppercase text-primary px-5 py-2 popup-form__button popup-form__button_white" type="button">Очистить</button>
+          <button class="btn btn-primary text-uppercase text-white px-5 py-2 popup-form__button" type="submit">Сохранить</button>
+         </div>
+       </div>
       </form>
     </div>
 
-		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script defer src="https://use.fontawesome.com/releases/v5.6.1/js/all.js" integrity="sha384-R5JkiUweZpJjELPWqttAYmYM1P3SNEJRM6ecTQF05pFFtxmCO+Y1CiUhvuDzgSVZ" crossorigin="anonymous"></script>
     <script>
       $(document).ready(function(){
+
+        var btn = $('.single__button')
+        var pop = $('.popup')
+        var popClose = $('.popup-close')
+
+        btn.on("click", function(){
+          pop.show()
+        });
+
+        popClose.on("click", function(){
+          pop.hide()
+        });
 
         var link = $('.menu-link');
         var menu = $('.nav-wrap');
