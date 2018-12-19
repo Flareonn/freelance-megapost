@@ -274,65 +274,67 @@
       </div>
       <form action="#">
        <div class="popup-middle bg-white flex-column d-flex justify-content-between align-items-center">
-        <div class="popup__descr px-3">
-        	<div class="popup-wrap d-flex justify-content-between align-items-center">
-        		<input type="text" class="popup-input my-1 px-2 bg-light w-100 text-primary" placeholder="https://" required>
-            <button class="btn btn-outline-light text-uppercase text-primary px-5 py-0 popup-form__button popup-form__button_white" type="button">Подключить</button>
-        	</div>
-        	<div class="popup-wrap">
-            <span class="text-muted mr-sm-auto">Каналы</span>
-            <input type="text" class="popup-input pl-3 w-100" required>
-         </div>
-         <div class="popup-wrap">
-          <span class="text-muted mr-3 mr-sm-auto">Способ публикации</span>
-          <select name="Способ" class="popup-select pr-5">
-            <option value="schedule">Расписание Вт, 14:00</option>
-            <option value="account">Аккаунты</option>
-            <option value="post">Публикации</option>
-            <option value="image">Изображения</option>
-            <option value="social">Социальные сети</option>
-            <option value="calendar">Календарь</option>
-            <option value="functions">Функции</option>
-            <option value="water-mark">Вотермарки</option>
-            <option value="rss">RSS</option>
-          </select>
-         </div>
-        </div>
-        <div class="popup-wrap popup-wrap_image pt-3 d-flex flex-column">
-        	<img src="https://avatars.mds.yandex.net/get-pdb/477388/55f51d9f-bef4-4d13-9898-33f350dc3bf6/s1200" alt="image" class="popup-image__block mb-2 pr-5 d-none d-md-block">
-        	<textarea required name="popup-wrap__descr" class="popup-text popup-text__descr-image"></textarea>
-          <button class="btn btn-outline-light text-uppercase text-primary px-2 py-2 popup-form__button popup-form__button_white align-self-end" type="button">Настроить</button>
-        </div>
-        <div class="popup-wrap">        	
-          <span class="text-muted mr-1 w-50 mr-sm-auto">Стоп-слова</span>
-          <input type="text" class="popup-input w-100" required>
-        </div>
-        <div class="popup-wrap">        	
-          <span class="text-muted mr-1 w-50 mr-sm-auto">Добавить текст</span>
-          <input type="text" class="popup-input w-100" required>
-        </div>
-        <div class="popup-wrap">
-        		<img src="img/single/menu_func.png" alt="icon" class="h-50 mr-3">
-        		<span class="text-muted mr-3 mr-sm-2">Выберите функцию</span>
-          <select name="function" placeholder="Jps" class="w-50 popup-select pr-5">
-           <option value="account">Аккаунт</option>
-           <option value="post">Публикации</option>
-           <option value="image">Изображения</option>
-           <option value="social">Социальные сети</option>
-           <option value="calendar">Календарь</option>
-           <option value="functions">Функции</option>
-           <option value="water-mark">Вотермарки</option>
-           <option value="rss">RSS</option>
-           <option value="schedule">Расписание</option>
-          </select>
-        </div>       	
-       	<div class="input-check w-100 ml-3 mt-3 d-none d-md-block">
-					<input type="checkbox" id="checkBox01" />
-					<label for="checkBox01">Использовать изображение?</label>
-				</div>
-        <div class="popup-form pt-2 pb-4 px-3 d-flex w-100 justify-content-end">
-         <button class="btn btn-primary text-uppercase text-white px-5 py-2 popup-form__button" type="submit">Подключить</button>
-	       </div>
+          <div class="popup__descr px-3">
+          	<div class="popup-wrap d-flex justify-content-between align-items-center">
+          		<input type="text" class="popup-input my-1 px-2 bg-light w-100 text-primary" placeholder="https://" required>
+              <button class="btn btn-outline-light text-uppercase text-primary px-5 py-0 popup-form__button popup-form__button_white" type="button">Подключить</button>
+          	</div>
+          	<div class="popup-wrap">
+              <span class="text-muted mr-sm-auto">Каналы</span>
+              <input type="text" class="popup-input pl-3 w-100" required>
+           </div>
+           <div class="popup-wrap">
+            <span class="text-muted mr-3 mr-sm-auto">Способ публикации</span>
+            <select name="Способ" class="popup-select pr-5">
+              <option value="schedule">Расписание Вт, 14:00</option>
+              <option value="account">Аккаунты</option>
+              <option value="post">Публикации</option>
+              <option value="image">Изображения</option>
+              <option value="social">Социальные сети</option>
+              <option value="calendar">Календарь</option>
+              <option value="functions">Функции</option>
+              <option value="water-mark">Вотермарки</option>
+              <option value="rss">RSS</option>
+            </select>
+           </div>
+          </div>
+          <div class="popup-wrap popup-wrap_image pt-3 d-flex flex-column">
+          	<img src="https://avatars.mds.yandex.net/get-pdb/477388/55f51d9f-bef4-4d13-9898-33f350dc3bf6/s1200" alt="image" class="popup-image__block mb-2 pr-5 d-none d-md-block">
+          	<textarea required name="popup-wrap__descr" class="popup-text popup-text__descr-image"></textarea>
+            <button class="btn btn-outline-light text-uppercase text-primary px-2 py-2 popup-form__button popup-form__button_white align-self-end" type="button">Настроить</button>
+          </div>
+          <div class="popup-wrap">        	
+            <span class="text-muted mr-1 w-50 mr-sm-auto">Стоп-слова</span>
+            <input type="text" class="popup-input w-100" required>
+          </div>
+          <div class="popup-wrap">        	
+            <span class="text-muted mr-1 w-50 mr-sm-auto">Добавить текст</span>
+            <input type="text" class="popup-input w-100" required>
+          </div>
+          <div class="popup-wrap">
+          		<img src="img/single/menu_func.png" alt="icon" class="h-50 mr-3">
+          		<span class="text-muted mr-3 mr-sm-2">Выберите функцию</span>
+            <select name="function" placeholder="Jps" class="w-50 popup-select pr-5">
+             <option value="account">Аккаунт</option>
+             <option value="post">Публикации</option>
+             <option value="image">Изображения</option>
+             <option value="social">Социальные сети</option>
+             <option value="calendar">Календарь</option>
+             <option value="functions">Функции</option>
+             <option value="water-mark">Вотермарки</option>
+             <option value="rss">RSS</option>
+             <option value="schedule">Расписание</option>
+            </select>
+          </div>       	
+         	<div class="input-check w-100 ml-3 mt-3 d-none d-md-block">
+  					<input type="checkbox" id="checkBox01" />
+  					<label for="checkBox01">Использовать изображение?</label>
+  				</div>
+          <div class="popup-form pt-2 pb-4 px-3 d-flex w-100 justify-content-end">
+           <button class="btn btn-primary text-uppercase text-white px-5 py-2 popup-form__button" type="submit">
+             Подключить
+           </button>
+          </div>
        </div>
       </form>
     </div>

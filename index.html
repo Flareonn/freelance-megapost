@@ -462,61 +462,62 @@
         </div>
       </div>
       <form action="#">
-       <div class="popup-middle bg-white flex-column d-flex justify-content-between align-items-center">
-        <div class="popup__descr popup__descr_schedule px-3">
-         <div class="popup-wrap">
-          <input type="text" class="popup-input w-100" placeholder="Напишите название" required>
-         </div>
-         <div class="popup-wrap d-flex justify-content-between">
-          <input type="text" class="popup-input w-100" placeholder="Добавить посты" required>
-          <div class="popup-icon">
-            <img src="img/single/icon_plus.png" alt="popup-icon">
-          </div>
-         </div>
-         <div class="popup-wrap d-flex justify-content-between">
-          <div class="popup-icon mr-3">
-            <img src="img/single/icon_list.png" alt="popup-icon">
-          </div>
-          <input type="text" class="popup-input w-100" placeholder="Выбрать список" required>
-          <div class="popup-icon">
-            <img src="img/single/icon_plus.png" alt="popup-icon">
-          </div>
-         </div>
-         <div class="popup-wrap mt-3">
-            <select name="dayOfWeek" class="popup-select pr-5 w-100">
-              <option value="rss">Воскресенье</option>
-              <option value="rss">Понедельник</option>
-              <option value="rss">Вторник</option>
-              <option value="rss">Среда</option>
-              <option value="rss">Четверег</option>
-              <option value="rss">Пятница</option>
-              <option value="rss">Суббота</option>
-            </select>
-          </div>
-          <div class="popup-wrap d-flex justify-content-between">
-            <div class="popup-select mr-3">
-              <label for="appTime" class="mr-3">Время</label>
-              <input type="time" id="appTime" class="popup-input">
+        <div class="popup-middle bg-white flex-column d-flex justify-content-between align-items-center">
+         <div class="popup__descr popup__descr_schedule px-3">
+           <div class="popup-wrap">
+            <input type="text" class="popup-input w-100" placeholder="Напишите название" required>
+           </div>
+           <div class="popup-wrap d-flex justify-content-between">
+            <input type="text" class="popup-input w-100" placeholder="Добавить посты" required>
+            <div class="popup-icon">
+              <img src="img/single/icon_plus.png" alt="popup-icon">
             </div>
-
-            <span>или</span>
-
-            <div class="popup-select ml-5">
-              <label for="appEveryTime">Каждые</label>
-              <input type="time" id="appEveryTime" class="popup-input">
+           </div>
+           <div class="popup-wrap d-flex justify-content-between">
+            <div class="popup-icon mr-3">
+              <img src="img/single/icon_list.png" alt="popup-icon">
             </div>
-          </div>
-         <div class="popup-wrap mt-2 d-flex justify-content-between">
-          <input type="text" class="popup-input w-100" placeholder="Добавить день" required>
-          <div class="popup-icon">
-            <img src="img/single/icon_plus.png" alt="popup-icon">
-          </div>
+            <input type="text" class="popup-input w-100" placeholder="Выбрать список" required>
+            <div class="popup-icon">
+              <img src="img/single/icon_plus.png" alt="popup-icon">
+            </div>
+           </div>
+           <div class="popup-wrap mt-3">
+              <select name="dayOfWeek" class="popup-select pr-5 w-100">
+                <option value="rss">Воскресенье</option>
+                <option value="rss">Понедельник</option>
+                <option value="rss">Вторник</option>
+                <option value="rss">Среда</option>
+                <option value="rss">Четверег</option>
+                <option value="rss">Пятница</option>
+                <option value="rss">Суббота</option>
+              </select>
+            </div>
+            <div class="popup-wrap d-flex justify-content-between">
+              <div class="popup-select mr-3">
+                <label for="appTime" class="mr-3">Время</label>
+                <input type="time" id="appTime" class="popup-input">
+              </div>
+
+              <span>или</span>
+
+              <div class="popup-select ml-5">
+                <label for="appEveryTime">Каждые</label>
+                <input type="time" id="appEveryTime" class="popup-input">
+              </div>
+            </div>
+           <div class="popup-wrap mt-2 d-flex justify-content-between">
+            <input type="text" class="popup-input w-100" placeholder="Добавить день" required>
+            <div class="popup-icon">
+              <img src="img/single/icon_plus.png" alt="popup-icon">
+            </div>
+           </div>
+           <div class="popup-form pt-2 pb-4 px-3 d-flex justify-content-sm-end flex-column-reverse flex-sm-row">
+            <button class="btn btn-outline-light text-uppercase text-primary px-5 py-2 popup-form__button popup-form__button_white" type="button">Очистить</button>
+            <button class="btn btn-primary text-uppercase text-white px-5 py-2 popup-form__button" type="submit">Сохранить</button>
+           </div>
          </div>
-         <div class="popup-form pt-2 pb-4 px-3 d-flex justify-content-sm-end flex-column-reverse flex-sm-row">
-          <button class="btn btn-outline-light text-uppercase text-primary px-5 py-2 popup-form__button popup-form__button_white" type="button">Очистить</button>
-          <button class="btn btn-primary text-uppercase text-white px-5 py-2 popup-form__button" type="submit">Сохранить</button>
-         </div>
-       </div>
+        </div>
       </form>
     </div>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
